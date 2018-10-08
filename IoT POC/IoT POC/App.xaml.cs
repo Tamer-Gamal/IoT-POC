@@ -3,6 +3,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using IoT_POC.Services;
 using IoT_POC.Views;
+using Xamarin.Essentials;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace IoT_POC
@@ -22,6 +23,7 @@ namespace IoT_POC
             else
                 DependencyService.Register<AzureDataStore>();
 
+            
             MainPage = new MainPage();
         }
 
